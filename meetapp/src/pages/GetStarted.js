@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Navbar from '../components/Navbar'
 function GetStarted() {
   return (
-    <div>Hello I am GetStarted page</div>
+    <div>
+    <Navbar />
+    <h1>Hello I am GetStarted page</h1>
+    </div>
   )
 }
 
