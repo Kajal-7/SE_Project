@@ -15,8 +15,8 @@ function GetStarted() {
     <div>
       <div className="top-part">
         <div className="p1">
-        {/* <span> */}
-              {/* <img
+          {/* <span> */}
+          {/* <img
                 //src={logo}
                 alt="tgt "
                 id="mylogo"
@@ -29,14 +29,17 @@ function GetStarted() {
                   marginBottom: "0.5rem",
                 }}
               ></img> */}
-            {/* </span> */}
-          <button
-            type="button"
-            class="btn btn-outline-primary btn-lg gs-btns"
-            style={{ marginRight: "100px" }}
-          >
-            Contact
-          </button>
+          {/* </span> */}
+          <a href="mailto:skap.meet@gmail.com">
+            <button
+              type="button"
+              class="btn btn-outline-primary btn-lg gs-btns"
+              style={{ marginRight: "100px" }}
+            >
+              Contact
+            </button>
+          </a>
+
           <button type="button" class="btn btn-outline-primary btn-lg gs-btns">
             Help
           </button>
@@ -44,9 +47,9 @@ function GetStarted() {
         <div className="p2">
           <h1 style={{ color: "#f7e681" }}>About Us</h1>
           <h4>
-          MeetApp is a meeting for researchers to present, discuss, identify 
-          important problems and formulate future research direction on specific themes.
-           It provides a true learning environment :)
+            MeetApp is a meeting for researchers to present, discuss, identify
+            important problems and formulate future research direction on
+            specific themes. It provides a true learning environment :)
           </h4>
         </div>
         <Link to={"/login"}>
@@ -56,7 +59,8 @@ function GetStarted() {
             style={{
               marginRight: "20px",
               borderColor: "#24a0ed",
-              marginLeft: "150px",
+              marginLeft: "100px",
+              color: "white",
             }}
           >
             Login
@@ -66,7 +70,7 @@ function GetStarted() {
           <button
             type="button"
             class="btn btn-outline-primary btn-lg flow-btns"
-            style={{ marginLeft: "20px" }}
+            style={{ marginLeft: "20px", color: "white" }}
           >
             Register
           </button>
@@ -156,7 +160,11 @@ function GetStarted() {
           </div>
         </div>
         <footer class="py-5" id="footer">
-            <div class="container px-5"><p class="m-0 text-center text-white small">Copyright &copy; Sahyog</p></div>
+          <div class="container px-5">
+            <p class="m-0 text-center text-white small">
+              Copyright &copy; Sahyog
+            </p>
+          </div>
         </footer>
 
         {/* <hr class="featurette-divider"></hr> */}
@@ -164,6 +172,6 @@ function GetStarted() {
       {/* <div className="bot-part"></div> */}
     </div>
   );
-          }
+}
 
 export default GetStarted;
