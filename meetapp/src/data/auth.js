@@ -38,7 +38,6 @@ export function Authentication({child}){
             id : uid,
             email: email,
             name : name,
-            OpportunitiesPosted: val,
             }; 
         //adding a document with doc id as uid
         async function storeUserData(){

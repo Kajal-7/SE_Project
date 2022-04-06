@@ -16,10 +16,10 @@ export default function Login() {
 
     try {
       await signIn(email, pass);
-      navigate("/home");
+      navigate("/dashboard");
     } catch (error) {
       setError(error.message);
-      console.log(error);
+      
     }
   };
   return (
