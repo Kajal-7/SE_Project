@@ -18,7 +18,7 @@ function App() {
         <Router >
         <Routes >
         <Route exact path = "/"
-        element = { < Navbar/ > }
+        element = { <GetStarted / > }
         /> <
         Route path = "/dashboard"
         element = { < Dashboard / > }
