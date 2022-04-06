@@ -6,6 +6,9 @@ import Faq from "./pages/FAQ";
 import PrivateMeet from "./pages/PrivateMeet";
 import KeynoteSession from "./pages/KeynoteSession";
 import InvitedTalk from "./pages/InvitedTalk";
+import Login from "./components/Authentication/Login";
+import Register from "./components/Authentication/Register";
+
 
 function App() {
   return (
@@ -18,6 +21,8 @@ function App() {
           <Route path="/privatemeet" element={<PrivateMeet/>} />
           <Route path="/keynotesession" element={<KeynoteSession/>} />
           <Route path="/invitedtalk" element={<InvitedTalk/>} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
         </Routes>
       </Router>
     </div>
