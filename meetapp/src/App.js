@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Authentication } from "./data/auth"; //Provider
 import GetStarted from "./pages/GetStarted";
 import Dashboard from "./pages/Dashboard";
 import Faq from "./pages/FAQ";
@@ -13,35 +14,21 @@ import Navbar from "./components/Navbar/Navbar.js"
 function App() {
     return ( 
     <div className = "App" >
-
-        {/* <Navbar / > */}
-        <Router >
-        <Routes >
-        <Route exact path = "/"
-        element = { <GetStarted / > }
-        /> <
-        Route path = "/dashboard"
-        element = { < Dashboard / > }
-        />  <
-        Route path = "/faq"
-        element = { < Faq / > }
-        /> <
-        Route path = "/privatemeet"
-        element = { < PrivateMeet / > }/>
-         <Route path = "/keynotesession"
-        element = { < KeynoteSession / > }
-        /> <
-        Route path = "/invitedtalk"
-        element = { < InvitedTalk / > }
-        /> <
-        Route path = "/login"
-        element = { < Login / > }
-        /> <
-        Route path = "/register"
-        element = { < Register / > }/> 
-        </Routes> 
-        </Router> 
-        </div>
+        <Authentication child={
+        <Router> 
+        <Routes>
+          <Route path="/" element={<GetStarted />} />
+          <Route path="/login" element={<Login/>} />
+          <Route path="/register" element={<Register/>} />
+          <Route path="/dashboard" element={ <Dashboard />}/>
+          <Route path="/faq" element={ <Faq />}/>
+          <Route path="/privatemeet" element={ <PrivateMeet />}/>
+          <Route path="/keynotesession" element={<KeynoteSession  />}/>
+          <Route path="/invitedtalk"element={ <InvitedTalk/>} />        
+        </Routes>
+      </Router>
+      }/>
+      </div>
     );
 }
 
