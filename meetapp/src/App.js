@@ -8,25 +8,41 @@ import KeynoteSession from "./pages/KeynoteSession";
 import InvitedTalk from "./pages/InvitedTalk";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
-
+import Navbar from "./components/Navbar/Navbar.js"
 
 function App() {
-  return (
-    <div className="App">
-    <Router>
-        <Routes>
-          <Route exact path="/" element={<GetStarted />} />
-          <Route path="/dashboard" element={<Dashboard />} /> 
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/privatemeet" element={<PrivateMeet/>} />
-          <Route path="/keynotesession" element={<KeynoteSession/>} />
-          <Route path="/invitedtalk" element={<InvitedTalk/>} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/register" element={<Register/>} />
-        </Routes>
-      </Router>
-    </div>
-  );
+    return ( 
+    <div className = "App" >
+
+        {/* <Navbar / > */}
+        <Router >
+        <Routes >
+        <Route exact path = "/"
+        element = { < Navbar/ > }
+        /> <
+        Route path = "/dashboard"
+        element = { < Dashboard / > }
+        />  <
+        Route path = "/faq"
+        element = { < Faq / > }
+        /> <
+        Route path = "/privatemeet"
+        element = { < PrivateMeet / > }/>
+         <Route path = "/keynotesession"
+        element = { < KeynoteSession / > }
+        /> <
+        Route path = "/invitedtalk"
+        element = { < InvitedTalk / > }
+        /> <
+        Route path = "/login"
+        element = { < Login / > }
+        /> <
+        Route path = "/register"
+        element = { < Register / > }/> 
+        </Routes> 
+        </Router> 
+        </div>
+    );
 }
 
 export default App;
