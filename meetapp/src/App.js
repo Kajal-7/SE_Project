@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Authentication } from "./data/auth"; //Provider
 import GetStarted from "./pages/GetStarted";
@@ -9,7 +8,7 @@ import KeynoteSession from "./pages/KeynoteSession";
 import InvitedTalk from "./pages/InvitedTalk";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
-import Navbar from "./components/Navbar/Navbar.js"
+
 
 function App() {
     return ( 
