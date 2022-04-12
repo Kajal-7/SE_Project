@@ -1,8 +1,10 @@
 import React from 'react'
-
+import Navbar from "../components/Navbar/Navbar"
 function Dashboard() {
   return (
-    <div>Hello I am Dashboard</div>
+    <div>
+      <Navbar />
+    </div>
   )
 }
 

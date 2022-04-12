@@ -9,21 +9,8 @@ const Navbar = () => {
     <div>
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-          <Link to="/home">
-            {/* <span> */}
-              {/* <img
-                src={logo}
-                alt="tgt "
-                style={{
-                  height: "60px",
-                  width: "90px",
-                  marginRight: "2rem",
-                  marginBottom: "0.5rem",
-                }}
-              ></img> */}
-            {/* </span> */}
-          </Link>
-          <span className="fmargin">SAHYOG</span>
+         
+          <span className="fmargin">MeetApp</span>
 
           <button
             class="navbar-toggler collapsed"
@@ -73,9 +60,11 @@ const Navbar = () => {
               </Link>
               <li>
                 
-                <button class="myb">
+               <Link to="/">
+               <button class="myb">
                   <i class="fa fa-sign-out" aria-hidden="true"></i>
               </button>
+               </Link>
               </li>             
            
             </ul>
