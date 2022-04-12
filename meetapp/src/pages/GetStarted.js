@@ -21,7 +21,7 @@ function GetStarted() {
                 type="button"
                 class="btn btn-outline-primary btn-lg gs-btns"
                 style={{
-                  paddingRight: "100px",
+                  
                   border: "none",
                   background:
                     "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",
@@ -72,7 +72,7 @@ function GetStarted() {
               </button>
             </Link>
           </div>
-          <div className="col-6">
+          <div className="col-6" >
             <img src={getstarted} alt="get started image"></img>
           </div>
         </div>
@@ -83,14 +83,17 @@ function GetStarted() {
                   </div>
                   <div className="col-4">
                   <div style={{paddingTop: "60px"}}>
-                  <img src={chatImg} alt="chatimage"></img>
-                  <span>Allows users to chat</span>
+                  <img src={chatImg} alt="chatimage" style={{marginRight: "10px"}}></img>
+                  <span style={{fontWeight: "bold",color: "black"}}>Allows users to chat</span>
                   <br /><br /><br />
-                  <img src={seatImg} alt="seatimage"></img>
+                  <img src={seatImg} alt="seatimage" style={{marginRight: "10px"}}></img>
+                  <span style={{fontWeight: "bold",color: "black"}}>Fixed number of seats</span>
                   <br /><br /><br />
-                  <img src={micImg} alt="micimage"></img>
+                  <img src={micImg} alt="micimage" style={{marginRight: "10px"}}></img>
+                  <span style={{fontWeight: "bold",color: "black"}}>Allows users to talk</span>
                   <br /><br /><br />
-                  <img src={camImg} alt="camimage"></img>
+                  <img src={camImg} alt="camimage" style={{marginRight: "10px"}}></img>
+                  <span style={{fontWeight: "bold",color: "black"}}>Allows users to share video</span>
                   </div>
                   </div>
                 </div>
