@@ -30,10 +30,11 @@ function GetStarted() {
         </div>
         <div className="row">
           <div className="col-6 p2">
-            <div style={{ marginLeft: "100px" }}>
+            <div style={{ marginLeft: "100px", marginTop: "25px" }}>
               <h1 style={{ color: "#f7e681" }}>About Us</h1>
               <h4>Struggling with low event engagement. </h4>
               <h4>We can fix that!</h4>
+              <h5 style={{color: "gray"}}>Use this platform to engage participants and encourage networking at your conferences.</h5>
             </div>
             <Link to={"/login"}>
               <button

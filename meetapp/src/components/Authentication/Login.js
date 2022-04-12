@@ -23,6 +23,7 @@ export default function Login() {
     }
   };
   return (
+    <div  style={{backgroundColor: "white"}}>
     <div class="container mt-5 mb-5">
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-md-6">
@@ -83,6 +84,7 @@ export default function Login() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
