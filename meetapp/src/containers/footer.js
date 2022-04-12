@@ -1,10 +1,10 @@
 import React from 'react'
-import Footer from '../components/footer'
+import Footer from '../components/Footer'
 import Icon from '../components/icons'
 
 export function FooterContainer() {
     return (
-        <Footer>
+        <Footer >
             <Footer.Wrapper>
             <Footer.Row>
                 <Footer.Column>
