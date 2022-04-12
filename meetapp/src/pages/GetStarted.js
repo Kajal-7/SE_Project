@@ -3,13 +3,17 @@ import React from "react";
 import "../styles/GetStarted.css";
 import { Link } from "react-router-dom";
 import getstarted from "../assets/startPic.png";
+import chatImg from "../assets/chat.png";
+import seatImg from "../assets/seat.png";
+import micImg from "../assets/mic.png";
+import camImg from "../assets/cam.png";
 import { FooterContainer } from "../containers/footer";
 import "../styles/Carousel.css";
 
 function GetStarted() {
   return (
-    <div>
-      <div className="top-part">
+    <div >
+      
         <div className="row">
           <div className="contact">
             <a href="mailto:skap.meet@gmail.com">
@@ -17,7 +21,7 @@ function GetStarted() {
                 type="button"
                 class="btn btn-outline-primary btn-lg gs-btns"
                 style={{
-                  marginRight: "100px",
+                  paddingRight: "100px",
                   border: "none",
                   background:
                     "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",
@@ -72,6 +76,24 @@ function GetStarted() {
             <img src={getstarted} alt="get started image"></img>
           </div>
         </div>
+      <div style={{backgroundColor: "white"}}>
+                <div className="row">
+                  <div className="col-8">
+                  <img src={getstarted} alt="dashboard image"></img>
+                  </div>
+                  <div className="col-4">
+                  <div style={{paddingTop: "60px"}}>
+                  <img src={chatImg} alt="chatimage"></img>
+                  <span>Allows users to chat</span>
+                  <br /><br /><br />
+                  <img src={seatImg} alt="seatimage"></img>
+                  <br /><br /><br />
+                  <img src={micImg} alt="micimage"></img>
+                  <br /><br /><br />
+                  <img src={camImg} alt="camimage"></img>
+                  </div>
+                  </div>
+                </div>
       </div>
       <FooterContainer />
     </div>
