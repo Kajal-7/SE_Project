@@ -27,7 +27,7 @@ export default function Register() {
   };
 
   return (
-    <div style={{backgroundColor: "white"}}>
+    <div>
     <div class="container mt-5 mb-5" >
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-md-6">
@@ -73,7 +73,8 @@ export default function Register() {
                 onChange={(e) => setpass(e.target.value)}
               />
             </div>
-            <button class="btn btn-primary mt-4 signup" onClick={handleSubmit}>
+            <button class="btn btn-primary mt-4 signup" onClick={handleSubmit} style={{background:
+                    "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",border: "none"}}>
               Register
             </button>
 

@@ -23,11 +23,6 @@
       height: 500px;
       background-color: beige;
   }
-  
-  /* h1 {
-    margin-left: 100px;
-  }
-   */
   .flow-btns{
     margin: 30px 30px;
     color: rgb(205, 205, 28);
@@ -47,9 +42,12 @@
     margin-left: 100px;
   }
 
-  
+  #Img{
+    max-width: 100%;
+  }
   #footer{
   
     margin-top:3rem;
     height:78px;
   }
+  

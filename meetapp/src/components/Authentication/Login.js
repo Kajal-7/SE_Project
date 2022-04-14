@@ -23,7 +23,7 @@ export default function Login() {
     }
   };
   return (
-    <div  style={{backgroundColor: "white"}}>
+    <div >
     <div class="container mt-5 mb-5">
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-md-6">
@@ -69,7 +69,8 @@ export default function Login() {
                 Remember me{" "}
               </label>
             </div>
-            <button class="btn btn-primary mt-4 signup" onClick={handleSubmit}>
+            <button class="btn btn-primary mt-4 signup" onClick={handleSubmit} style={{background:
+                    "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",border: "none"}}>
               Log In
             </button>
             <div class="text-center mt-4">
