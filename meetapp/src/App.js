@@ -8,10 +8,13 @@ import KeynoteSession from "./pages/KeynoteSession";
 import InvitedTalk from "./pages/InvitedTalk";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
+import navbar from "./components/Navbar/Navbar.js"
 
 
 function App() {
-    return ( 
+    return (
+      <div>
+      <navbar/>
     <div className = "App" >
         <Authentication child={
         <Router> 
@@ -21,13 +24,14 @@ function App() {
           <Route path="/register" element={<Register/>} />
           <Route path="/dashboard" element={ <Dashboard />}/>
           <Route path="/faq" element={ <Faq />}/>
-          <Route path="/privatemeet" element={ <PrivateMeet />}/>
+          <Route path="/PrivateMeet" element={ <PrivateMeet />}/>
           <Route path="/keynotesession" element={<KeynoteSession  />}/>
           <Route path="/invitedtalk"element={ <InvitedTalk/>} />        
         </Routes>
       </Router>
       }/>
       </div>
+      </div> 
     );
 }
 
