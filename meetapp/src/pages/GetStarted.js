@@ -21,7 +21,7 @@ function GetStarted() {
                 type="button"
                 class="btn btn-outline-primary btn-lg gs-btns"
                 style={{
-                  
+                  marginRight: "100px",
                   border: "none",
                   background:
                     "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",

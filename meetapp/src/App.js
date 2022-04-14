@@ -21,7 +21,7 @@ function App() {
           <Route path="/register" element={<Register/>} />
           <Route path="/dashboard" element={ <Dashboard />}/>
           <Route path="/faq" element={ <Faq />}/>
-          <Route path="/privatemeet" element={ <PrivateMeet />}/>
+          <Route path="/PrivateMeet" element={ <PrivateMeet />}/>
           <Route path="/keynotesession" element={<KeynoteSession  />}/>
           <Route path="/invitedtalk"element={ <InvitedTalk/>} />        
         </Routes>
