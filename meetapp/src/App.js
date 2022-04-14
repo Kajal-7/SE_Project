@@ -8,10 +8,13 @@ import KeynoteSession from "./pages/KeynoteSession";
 import InvitedTalk from "./pages/InvitedTalk";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
+import navbar from "./components/Navbar/Navbar.js"
 
 
 function App() {
-    return ( 
+    return (
+      <div>
+      <navbar/>
     <div className = "App" >
         <Authentication child={
         <Router> 
@@ -28,6 +31,7 @@ function App() {
       </Router>
       }/>
       </div>
+      </div> 
     );
 }
 
