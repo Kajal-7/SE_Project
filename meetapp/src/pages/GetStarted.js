@@ -1,4 +1,4 @@
-import "../styles/Carousel.css";
+
 import React from "react";
 import "../styles/GetStarted.css";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import seatImg from "../assets/seat.png";
 import micImg from "../assets/mic.png";
 import camImg from "../assets/cam.png";
 import { FooterContainer } from "../containers/footer";
-import "../styles/Carousel.css";
+
 
 function GetStarted() {
   return (
