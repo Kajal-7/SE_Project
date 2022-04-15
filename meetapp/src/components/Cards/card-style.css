@@ -1,29 +1,81 @@
+
+/* #bg{
+    background-color: aliceblue;
+} */
 .card{
 
-    width:20rem;
+    width:30rem;
+    
+    height:40rem;
 
    padding: 2rem;
+  
     margin-top:5rem;
+    border-color: rgb(245, 230, 205);
+    border-radius: 23px;
+    border-width: 2px;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    transition:0.5s;
+    z-index: 3;
 }
 #sec{
-    margin-left: -5rem;
+
+    /* margin-left: 2rem; */
+    margin-right: -12rem;
+    
+    
+    
+    /* margin-left: -5rem; */
 }
 
 
 #first{
 
-    margin-left: -5rem;
+    margin-left: 7rem;
+    /* margin-right: 2rem; */
 }
 p{
     align-items: center;
     justify-content: center;
     margin: 0px 0px 20px 20px;
+    color:rgb(255, 255, 255);
+    
 }
+
+#Img{
+  
+    /* height:20%;
+    width:20%; */
+
+}
+
+.bg-image {
+    /* The image used */
+    background-image: url("https://img.freepik.com/free-photo/busy-business-people-walking_53876-138169.jpg?t=st=1649929825~exp=1649930425~hmac=5d0b03c66120e4b9bc9993fa684245dce231f43f1e56cd0510678b035020687d&w=996");
+    
+    /* Add the blur effect */
+    /* filter: blur(8px);
+    -webkit-filter: blur(8px); */
+    
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
 .card:hover{
 
-    box-shadow: 5px 10px 20px 1px rgba(180, 147, 14, 0.8) !important;
+    box-shadow: 5px 10px 20px 1px rgba(255, 255, 170, 0.8) !important;
 }
 .card-body{
+    color: #fff;
     padding: 3rem 0 !important;
 }
 .card-text{
@@ -47,12 +99,17 @@ p{
 
 .card-img-top:hover{
     transform: scale(1.8);
+    color: rgba(12, 1, 32, 0.35);
 }
+/* p.card-text.text-secondary{
+    color: red;
+} */
 
 @media screen and (max-width: 1200px) {
   
     #sec{
         margin-left: 5rem;
+        margin-right: 5rem;
     }
     
     /* .card{
@@ -71,3 +128,29 @@ p{
     width: 40%;
     height: auto;
   } */
+
+  .container-fluid{
+   
+    height:auto;
+    background-image: url("./../../assets/main.png");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    
+
+    background-size: cover;
+    background-position: center;
+    padding:3rem;
+
+  }
+
+  #buttons{
+
+    color:rgba(255, 255, 170, 0.8);
+    border-color: rgba(255, 255, 170, 0.8);
+  }
+
+  #buttons:hover{
+
+    background-color:rgba(255, 255, 170, 0.8);
+    color:black;
+  }
