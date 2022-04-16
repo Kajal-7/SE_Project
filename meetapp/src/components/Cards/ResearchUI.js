@@ -1,10 +1,10 @@
 import React from 'react'
 import cam from "../../assets/startPic.png" 
-import './card-style.css'
-//import './Invited.css'
+//import './card-style.css'
+import './Research.css'
 import navbar from '../Navbar/Navbar.js'
 
-const CardsUI = props => {
+const ResearchUI = props => {
   return (
     
     <div>
@@ -29,4 +29,4 @@ const CardsUI = props => {
   )
 }
 
-export default CardsUI
+export default ResearchUI

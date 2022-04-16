@@ -1,15 +1,15 @@
 import React from 'react'
 import cam from "../../assets/startPic.png" 
-import './card-style.css'
-//import './Invited.css'
+//import './card-style.css'
+import './Poster.css'
 import navbar from '../Navbar/Navbar.js'
 
-const CardsUI = props => {
+const PosterUI = props => {
   return (
     
     <div>
         <navbar/>
-   <div id="fed" className="card text-center" style={{backgroundColor: "rgba(0, 1, 2, 0.8)"}}>
+   <div id="fed"  className="card text-center" style={{backgroundColor: "rgba(0, 1, 2, 0.8)"}}>
    <div className="overflow">
        <img src={props.imgsrc} alt="cam" className="card-img-top" />
    </div>
@@ -29,4 +29,4 @@ const CardsUI = props => {
   )
 }
 
-export default CardsUI
+export default PosterUI

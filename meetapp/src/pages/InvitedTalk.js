@@ -1,9 +1,14 @@
 import React from 'react'
-
+import CardsUI from '../components/Cards/CardsUI'
+import InvitedTalkCards from "../components/Cards/InvitedTalkCards"
+import Navbar from "../components/Navbar/Navbar"
 function InvitedTalk() {
   return (
-    <div>Hello I am InvitedTalk</div>
+    <div>
+    <div><Navbar /></div>
+   <div><InvitedTalkCards/></div> 
+  </div>
   )
 }
 
-export default InvitedTalk
+export default InvitedTalk;

@@ -1,4 +1,4 @@
-import "../styles/Carousel.css";
+
 import React from "react";
 import "../styles/GetStarted.css";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import seatImg from "../assets/seat.png";
 import micImg from "../assets/mic.png";
 import camImg from "../assets/cam.png";
 import { FooterContainer } from "../containers/footer";
-import "../styles/Carousel.css";
+
 
 function GetStarted() {
   return (
@@ -21,7 +21,7 @@ function GetStarted() {
                 type="button"
                 class="btn btn-outline-primary btn-lg gs-btns"
                 style={{
-                  
+                  marginRight: "100px",
                   border: "none",
                   background:
                     "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",

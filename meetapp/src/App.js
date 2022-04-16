@@ -9,7 +9,7 @@ import InvitedTalk from "./pages/InvitedTalk";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
 import navbar from "./components/Navbar/Navbar.js"
-
+import MeetDisplay from "./pages/MeetDisplay";
 
 function App() {
     return (
@@ -24,9 +24,10 @@ function App() {
           <Route path="/register" element={<Register/>} />
           <Route path="/dashboard" element={ <Dashboard />}/>
           <Route path="/faq" element={ <Faq />}/>
-          <Route path="/privatemeet" element={ <PrivateMeet />}/>
+          <Route path="/PrivateMeet" element={ <PrivateMeet />}/>
           <Route path="/keynotesession" element={<KeynoteSession  />}/>
-          <Route path="/invitedtalk"element={ <InvitedTalk/>} />        
+          <Route path="/invitedtalk" element={ <InvitedTalk/>} />   
+          <Route path="/meet-display" element={<MeetDisplay/>}/>     
         </Routes>
       </Router>
       }/>

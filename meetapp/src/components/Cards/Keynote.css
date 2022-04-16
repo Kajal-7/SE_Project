@@ -4,7 +4,7 @@
 } */
 #fed{
 
-    width:30rem;
+    width:20rem;
     
     height:40rem;
 
@@ -23,8 +23,8 @@
 }
 #sec{
 
-    /* margin-left: 2rem; */
-    margin-right: -12rem;
+    margin-left: 5.6rem;
+     margin-right: -7rem; 
     
     
     
@@ -33,9 +33,11 @@
 
 
 #first{
-
-    margin-left: 7rem;
-    /* margin-right: 2rem; */
+ 
+    margin-left: 5.6rem;
+    margin-right: -7rem; 
+    /* margin-left: 0.5rem; 
+    margin-right: 0.5rem; */
 }
 p{
     align-items: center;
@@ -76,7 +78,7 @@ p{
 }
 .card-body{
     color: #fff;
-    padding: 3rem 0 !important;
+    padding: 1rem 0 !important;
 }
 .card-text{
     font-size: 0.9rem;
