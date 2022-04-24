@@ -11,6 +11,7 @@ import Register from "./components/Authentication/Register";
 import MeetDisplay from "./pages/MeetDisplay";
 import Research from "./pages/Research";
 import Poster from "./pages/Poster";
+import FAQ from "./pages/FAQ";
 
 function App() {
     return (
@@ -30,7 +31,8 @@ function App() {
           <Route path="/invitedtalk" element={ <InvitedTalk/>} /> 
           <Route path="/research-presentation" element={<Research/>}/> 
           <Route path="/poster-presentation" element={<Poster/>}/>   
-          <Route path="/meet-display" element={<MeetDisplay/>}/>     
+          <Route path="/meet-display" element={<MeetDisplay/>}/> 
+          <Route path="/Faq"  element = {<FAQ/>} /> 
         </Routes>
       </Router>
       }/>
