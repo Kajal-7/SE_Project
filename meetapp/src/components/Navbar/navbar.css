@@ -73,10 +73,17 @@
     background-color: rgb(0,1,63);
 } */
 
+#lastitem{
+
+    margin-right: 1rem;
+}
+
 .navitem {
     margin-left: 2rem;
     font-size: 18px;
-    color: aliceblue;
+    font-weight: bolder;
+    color: rgba(252, 250, 252, 0.596);
+    /* color: rgb(246, 251, 243); */
 }
 
 #last {

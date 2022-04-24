@@ -1,7 +1,7 @@
 import React from 'react'
 import cam from "../../assets/startPic.png" 
 //import './card-style.css'
-import './Research.css'
+import './Invited.css'
 import navbar from '../Navbar/Navbar.js'
 
 const ResearchUI = props => {
@@ -22,6 +22,7 @@ const ResearchUI = props => {
        </p>
        <a href="#" className="btn btn-outline" id="buttons">Go Anywhere</a>
    </div>
+
 
    </div>
    </div>

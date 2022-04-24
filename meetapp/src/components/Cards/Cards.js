@@ -14,7 +14,7 @@ class Cards extends Component {
             <div>
        
             
-             <div className="container-fluid d-flex justify-content-center">
+             <div className="container-fluid d-flex justify-content-center" id="scards">
                {/* <img className="background" src="https://www.imagesource.com/wp-content/uploads/2019/06/Rio.jpg" alt="Aleq"></img> */}
               
                  <div className="row" >

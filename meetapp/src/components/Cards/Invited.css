@@ -131,7 +131,7 @@ p{
     height: auto;
   } */
 
-  .container-fluid{
+  #scards{
    
     height:auto;
     background-image: url("./../../assets/main.png");
@@ -143,6 +143,55 @@ p{
     background-position: center;
     padding:3rem;
 
+  }
+  #ResCards{
+   
+    height:auto;
+    background-image: url("https://wallpaperaccess.com/full/2053899.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    
+
+    background-size: cover;
+    background-position: center;
+    padding:3rem;
+
+  }
+
+  #PostCards{
+    height:auto;
+    background-image: url("https://image.shutterstock.com/image-photo/top-view-dark-stylish-workplace-260nw-1491489773.jpg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    
+
+    background-size: cover;
+    background-position: center;
+    padding:3rem;
+  }
+
+  #InvTalks{
+    height:auto;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5db8b102eccf16708e72f6c0/1575249029880-GC81JSKUTVOXRJXGZ3RL/image-asset.jpeg");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    
+
+    background-size: cover;
+    background-position: center;
+    padding:3rem;
+  }
+
+  #keyNote{
+      height:auto;
+    background-image: url("https://media.istockphoto.com/photos/onstage-successful-female-speaker-presents-technological-product-uses-picture-id1226991771?k=20&m=1226991771&s=612x612&w=0&h=mKdwBbnUUJi1a3yojhhwBOfgMTdbpqiUMrjPb1Bd1Og=");
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    
+
+    background-size: cover;
+    background-position: center;
+    padding:3rem;
   }
 
   #buttons{

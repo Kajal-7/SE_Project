@@ -39,14 +39,14 @@ const Navbar = () => {
               </Link>
 
               <Link to="/faq" style={{ textDecoration: "none" }}>
-                <li class="nav-item" className="navitem">
+                <li class="nav-item" className="navitem" id="lastitem">
                   FAQs
                 </li>
               </Link>
 
-           
+             
 
-              <Link to="/KeynoteSession" style={{ textDecoration: "none" }}>
+              {/* <Link to="/KeynoteSession" style={{ textDecoration: "none" }}>
                 <li class="nav-item" className="navitem">
                   Keynote Session
                 </li>
@@ -56,7 +56,7 @@ const Navbar = () => {
                 <li class="nav-item" className="navitem" id="last">
                   Invited Talk
                 </li>
-              </Link>
+              </Link> */}
               <li>
                 
                <Link to="/">
