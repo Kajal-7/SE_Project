@@ -8,8 +8,9 @@ import KeynoteSession from "./pages/KeynoteSession";
 import InvitedTalk from "./pages/InvitedTalk";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";
-import navbar from "./components/Navbar/Navbar.js"
 import MeetDisplay from "./pages/MeetDisplay";
+import Research from "./pages/Research";
+import Poster from "./pages/Poster";
 
 function App() {
     return (
@@ -26,7 +27,9 @@ function App() {
           <Route path="/faq" element={ <Faq />}/>
           <Route path="/PrivateMeet" element={ <PrivateMeet />}/>
           <Route path="/keynotesession" element={<KeynoteSession  />}/>
-          <Route path="/invitedtalk" element={ <InvitedTalk/>} />   
+          <Route path="/invitedtalk" element={ <InvitedTalk/>} /> 
+          <Route path="/research-presentation" element={<Research/>}/> 
+          <Route path="/poster-presentation" element={<Poster/>}/>   
           <Route path="/meet-display" element={<MeetDisplay/>}/>     
         </Routes>
       </Router>
