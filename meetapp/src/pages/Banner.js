@@ -5,12 +5,12 @@ const QuestionContext = React.createContext();
 export default function Banner({ children, ...restProps }) {
   return (
     <Container {...restProps}>
-      <Inner>{children}</Inner>
+      <Inner> {children} </Inner>
     </Container>
   );
 }
 Banner.Header = function BannerHeader({ children, ...restProps }) {
-  return <Header {...restProps}> {children}</Header>;
+  return <Header {...restProps}> {children} </Header>;
 };
 Banner.Entity = function BannerEntity({ children, ...restProps }) {
   const [open, setOpen] = useState(false);

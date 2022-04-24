@@ -1,13 +1,13 @@
 import styled from "styled-components/macro";
 
 export const Container = styled.div`
-  border-bottom: 9px solid #070707;
+  border-bottom:  solid white;
   display: flex;
 `;
 export const Entity = styled.div`
-  color: #070707;
-  border: 1px solid #070707;
-  max-width: 690px;
+  color: white;
+  border: 0px solid white;
+  max-width: 1000px;
   width: 99%;
   margin-bottom: 10px;
   margin: auto;
@@ -17,7 +17,7 @@ export const Entity = styled.div`
 `;
 export const Inner = styled.div`
   padding: 75px 40px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: auto;
   flex-direction: column;
   display: flex;
@@ -49,14 +49,14 @@ export const Text = styled.p`
   }
 `;
 export const Header = styled.h1`
-  color: #070707;
+  color: white;
   line-height: 7;
-  margin-top: 0 !important;
+  margin-top: 0 ;
   font-size: 45px;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
   text-align: center;
   @media (max-width: 600px) {
     font-size: 33px;
   }
-  color: #070707;
+  color: white;
 `;
