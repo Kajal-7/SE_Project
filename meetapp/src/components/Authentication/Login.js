@@ -7,7 +7,7 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
   const [error, setError] = useState("");
-  const { signIn } = useAuthContext();
+  const { signIn,user } = useAuthContext();
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -16,6 +16,7 @@ export default function Login() {
 
     try {
       await signIn(email, pass);
+      console.log(user);
       navigate("/dashboard");
     } catch (error) {
       setError(error.message);

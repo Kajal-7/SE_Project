@@ -1,9 +1,21 @@
 import React,{useState} from "react";
 import { Link ,useNavigate} from "react-router-dom";
+import { useAuthContext } from "../../data/auth";
 import "./navbar.css";
 const Navbar = () => {
 
- 
+  const {logout}=useAuthContext();
+  const [error,setError]=useState("");
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    setError("");
+    try {
+      await logout();
+    } catch (error) {
+      console.log("Error logout" + error.message);
+      setError("Failed to logout");
+    }
+  };
   return (
     <div>
       <nav class="navbar navbar-expand-lg">
@@ -43,29 +55,8 @@ const Navbar = () => {
                   FAQs
                 </li>
               </Link>
-
-             
-
-              {/* <Link to="/KeynoteSession" style={{ textDecoration: "none" }}>
-                <li class="nav-item" className="navitem">
-                  Keynote Session
-                </li>
-              </Link>
-             
-              <Link to="/invitedtalk" style={{ textDecoration: "none" }}>
-                <li class="nav-item" className="navitem" id="last">
-                  Invited Talk
-                </li>
-              </Link> */}
-              <li>
-                
-               <Link to="/">
-               <button class="myb">
-                  <i class="fa fa-sign-out" aria-hidden="true"></i>
-              </button>
-               </Link>
-              </li>             
-           
+              <li><button class="myb" onClick={handleLogout}><i class="fa fa-sign-out" aria-hidden="true"></i></button></li>              
+              {error && <div>{error.message}</div>}
             </ul>
           </div>
         </div>

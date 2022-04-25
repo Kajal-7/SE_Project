@@ -3,7 +3,10 @@ import questions from "./questions.js";
 import Banner from "./Banner";
 import Navbar from "../components/Navbar/Navbar"
 import { FooterContainer } from "../containers/footer";
+import { useAuthContext } from "../data/auth.js";
 function Faq() {
+  const {user} = useAuthContext();
+  console.log(user);
   return (
     <div>
       <Navbar />

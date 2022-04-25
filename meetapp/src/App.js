@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Authentication } from "./data/auth"; //Provider
 import GetStarted from "./pages/GetStarted";
 import Dashboard from "./pages/Dashboard";
-import Faq from "./pages/FAQ";
 import PrivateMeet from "./pages/PrivateMeet";
 import KeynoteSession from "./pages/KeynoteSession";
 import InvitedTalk from "./pages/InvitedTalk";
@@ -11,7 +10,8 @@ import Register from "./components/Authentication/Register";
 import MeetDisplay from "./pages/MeetDisplay";
 import Research from "./pages/Research";
 import Poster from "./pages/Poster";
-import FAQ from "./pages/FAQ";
+import Faq from "./pages/FAQ";
+import PrivateRoute from "./PrivateRoutes";
 
 function App() {
     return (
@@ -24,15 +24,14 @@ function App() {
           <Route path="/" element={<GetStarted />} />
           <Route path="/login" element={<Login/>} />
           <Route path="/register" element={<Register/>} />
-          <Route path="/dashboard" element={ <Dashboard />}/>
-          <Route path="/faq" element={ <Faq />}/>
-          <Route path="/PrivateMeet" element={ <PrivateMeet />}/>
-          <Route path="/keynotesession" element={<KeynoteSession  />}/>
-          <Route path="/invitedtalk" element={ <InvitedTalk/>} /> 
-          <Route path="/research-presentation" element={<Research/>}/> 
-          <Route path="/poster-presentation" element={<Poster/>}/>   
-          <Route path="/meet-display" element={<MeetDisplay/>}/> 
-          <Route path="/Faq"  element = {<FAQ/>} /> 
+          <Route path="/dashboard" element={ <PrivateRoute child={<Dashboard />}></PrivateRoute>}/>
+          <Route path="/faq" element={ <PrivateRoute child={<Faq />}></PrivateRoute>}/>
+          <Route path="/PrivateMeet" element={<PrivateRoute child={<PrivateMeet/>}></PrivateRoute>}/>
+          <Route path="/keynotesession" element={<PrivateRoute child={<KeynoteSession  />}></PrivateRoute>}/>
+          <Route path="/invitedtalk" element={ <PrivateRoute child={<InvitedTalk/>}></PrivateRoute>} /> 
+          <Route path="/research-presentation" element={<PrivateRoute child={<Research/>}></PrivateRoute>}/> 
+          <Route path="/poster-presentation" element={<PrivateRoute child={<Poster/>}></PrivateRoute>}/>   
+          <Route path="/meet-display" element={<PrivateRoute child={<MeetDisplay/>}></PrivateRoute>}/> 
         </Routes>
       </Router>
       }/>
