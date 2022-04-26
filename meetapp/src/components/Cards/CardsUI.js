@@ -20,7 +20,7 @@ const CardsUI = props => {
 
            {props.content}
        </p>
-       <a href="#" className="btn btn-outline" id="buttons">Go Anywhere</a>
+       <a href={props.url} className="btn btn-outline" id="buttons">View details</a>
    </div>
 
    </div>
