@@ -20,7 +20,7 @@ const ResearchUI = props => {
 
            {props.content}
        </p>
-       <a href="#" className="btn btn-outline" id="buttons">Go Anywhere</a>
+       <a href="#" className="btn btn-outline" id="buttons">View Details</a>
    </div>
 
 
