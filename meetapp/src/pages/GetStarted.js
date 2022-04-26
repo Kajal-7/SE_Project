@@ -8,12 +8,14 @@ import seatImg from "../assets/seat.png";
 import micImg from "../assets/mic.png";
 import camImg from "../assets/cam.png";
 import { FooterContainer } from "../containers/footer";
-
+import BgIcons from "../components/backGround/BgIcons";
 
 function GetStarted() {
   return (
     <div >
-      
+       <BgIcons
+         mt="-20%"
+       />
         <div className="row">
           <div className="contact">
             <a href="mailto:skap.meet@gmail.com">

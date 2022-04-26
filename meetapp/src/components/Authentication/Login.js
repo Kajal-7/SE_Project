@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../../styles/register.css";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuthContext } from "../../data/auth";
-
+import BgIcons from "../backGround/BgIcons";
 export default function Login() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
@@ -25,11 +25,14 @@ export default function Login() {
   };
   return (
     <div >
-    <div class="container mt-5 mb-5">
+    <BgIcons
+      mt="-30%"
+    />
+    <div class="container mt-5 mb-5" >
       <div class="row d-flex align-items-center justify-content-center">
         <div class="col-md-6">
           <div class="card px-5 py-5">
-            <h5 class="mt-3" style={{ textAlign: "center", fontSize: "30px" }}>
+            <h5 className="mt-3" style={{ textAlign: "center", fontSize: "30px" }}>
               LOGIN
             </h5>
             {error && (

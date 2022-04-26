@@ -15,8 +15,7 @@ import PrivateRoute from "./PrivateRoutes";
 
 function App() {
     return (
-      <div>
-      <navbar/>
+      
     <div className = "App" >
         <Authentication child={
         <Router> 
@@ -36,7 +35,6 @@ function App() {
       </Router>
       }/>
       </div>
-      </div> 
     );
 }
 
