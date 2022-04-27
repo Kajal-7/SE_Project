@@ -6,10 +6,10 @@ import { useAuthContext } from './data/auth';
 
 export default function PrivateRoute({child}){
 
-    const {user} = useAuthContext();
-    console.log(user);
-    if(!user){
-        return <Navigate to="/"/> 
-    }
+    // const {user} = useAuthContext();
+    // console.log(user);
+    // if(!user){
+    //     return <Navigate to="/"/> 
+    // }
     return child;
 }
