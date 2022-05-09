@@ -22,6 +22,10 @@ const CardsUI = props => {
        </p>
        <a href={props.url} className="btn btn-outline" id="buttons" style={{background:
                     "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",border: "none"}}>View details</a>
+        <br></br>
+        <br></br>
+     <a href={props.url2} className="btn btn-outline" id="buttons" style={{background:
+                    "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",border: "none"}}>Create</a>                  
    </div>
 
    </div>

@@ -1,5 +1,5 @@
 import React from 'react'
-import cam from "../../assets/startPic.png" 
+import cam from "../../assets/startPic.png"
 //import './card-style.css'
 import './Invited.css'
 import navbar from '../Navbar/Navbar.js'
