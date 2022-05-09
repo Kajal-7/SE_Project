@@ -9,18 +9,19 @@ const ResearchUI = props => {
     
     <div>
         <navbar/>
-   <div id="fed" className="card text-center" style={{backgroundColor: "rgba(0, 1, 2, 0.8)"}}>
+   <div id="fed" className="card text-center" style={{backgroundColor: "rgba(255,255,255,0.8"}}>
    <div className="overflow">
        <img src={props.imgsrc} alt="cam" className="card-img-top" />
    </div>
    <div className="card-body text-dark">
-       <h4 className="card-title" style={{color: "rgba(255, 255, 170, 0.8)"}}>{props.title}</h4>
+       <h4 className="card-title"  style={{color: "rgba(186, 85, 211, 1)"}}>{props.title}</h4>
        <p className="card-text " style={{color: 'white'}}>
            {/* lorem epsum kkjjedhjdkehkehkehekhdkgdjgd ejgejkegkjehkejlelel dfjfhmh hgkfkg, gfkbbj jhfitoihk fyiuto8ln h7itig,j gukfkliyyftd ghli,jb fjyfhjmh oufjdgrsxcm dgcmv,luiu gdhtdrsh fiyfk */}
 
            {props.content}
        </p>
-       <a href="#" className="btn btn-outline" id="buttons">View Details</a>
+       <a href="#" className="btn btn-outline" id="buttons"  style={{background:
+                    "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",border: "none"}}>View Details</a>
    </div>
 
 
