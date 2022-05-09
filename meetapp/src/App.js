@@ -11,6 +11,7 @@ import MeetDisplay from "./pages/MeetDisplay";
 import Research from "./pages/Research";
 import Poster from "./pages/Poster";
 import Faq from "./pages/FAQ";
+import Form from "./components/EventForm";
 import PrivateRoute from "./PrivateRoutes";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/research-presentation" element={<PrivateRoute child={<Research/>}></PrivateRoute>}/> 
           <Route path="/poster-presentation" element={<PrivateRoute child={<Poster/>}></PrivateRoute>}/>   
           <Route path="/meet-display" element={<PrivateRoute child={<MeetDisplay/>}></PrivateRoute>}/> 
+          <Route path="/event-form" element={<PrivateRoute child={<Form/>}></PrivateRoute>}/> 
         </Routes>
       </Router>
       }/>
