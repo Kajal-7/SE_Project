@@ -22,7 +22,7 @@ function PrivateMeet() {
           </div>
           <div class="col-lg-6">
             <h1 class="display-5 fw-bold lh-1 mb-3">Sample Heading</h1>
-            <p class="lead" style={{ marginLeft: "0px" }}>
+            <p class="lead" style={{ marginLeft: "0px", color: "black"}}>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
