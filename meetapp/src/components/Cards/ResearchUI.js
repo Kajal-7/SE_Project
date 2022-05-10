@@ -20,7 +20,7 @@ const ResearchUI = props => {
 
            {props.content}
        </p>
-       <a href="#" className="btn btn-outline" id="buttons"  style={{background:
+       <a href={props.url} className="btn btn-outline" id="buttons"  style={{background:
                     "linear-gradient(90deg, #7B5BC7 0.52%, #EA388D 92.19%)",border: "none"}}>View Details</a>
    </div>
 
